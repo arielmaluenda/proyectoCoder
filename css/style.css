@@ -2,6 +2,12 @@
 * Fonts + Reset * * * * * * * * * * * * * * * * * * * * *
 */
 
+@media (max-width: 550px) {
+  nav .menu{
+    display:none;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
@@ -19,7 +25,7 @@ html {
 }
 
 body{
-  background-color:#eeeeee;
+  background-color:#ffffff;
   color:rgb(28, 26, 26);
   width: 100vw;
   max-width: 1280px;
@@ -132,6 +138,7 @@ article p{
 */
 
 .menu{
+  display:flex;
   list-style-type: none;
   float:right;
   padding: 10px;  
@@ -146,16 +153,16 @@ article p{
   text-decoration: none;
 }
 .menu li{
-  display:flex;
-  border: 2px solid rgb(210, 210, 210);
-  float:left;
-  padding: 0.3rem 2rem;
-  margin-left: -2px;
+  padding: 5px 15px;
+  border-top: 2px solid rgb(210, 210, 210);
+  border-bottom: 2px solid rgb(210, 210, 210);
+  border-right: 2px solid rgb(210, 210, 210);
   background-color: rgb(53, 53, 205);
 }
 
 .menu li:first-child{
-  border-radius: 10px 0 0 10px;  
+  border-radius: 10px 0 0 10px;
+  border-left: 2px solid rgb(210, 210, 210);  
 }
 
 .menu li:last-child{
