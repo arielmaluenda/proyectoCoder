@@ -4,9 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*
@@ -105,6 +106,7 @@ article p{
 .articleImage{
   margin: 0px auto;
   text-align: center;
+  max-width: 1280px;
 }
 
 .infoBubble{
@@ -118,25 +120,17 @@ article p{
   border-radius: 20px;
 }
 .progressBar{
-  
-  background-color: rgb(255, 255, 255);
   width: 60%;
   max-width: 600px;
   height: 25px;
-  margin: 40px auto 0;  
-  border-radius: 1rem;
-}
-.progress {
-  background-color: chartreuse;
-  width: 30%;
-  border-right: 1px solid rgb(13, 186, 13);
-  height: 25px;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  margin: 40px auto 0;
+  
+  
 }
 
 .articleImage img{
-  width: 100vw;
+  
+  max-width: 1024px;
   padding:0;
   margin:0;
   overflow: hidden;
