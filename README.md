@@ -5,5 +5,3 @@
 - Diseño responsivo
 - Flexbox
 - CSS Grids 
-
-¡Sin usar frameworks! 
