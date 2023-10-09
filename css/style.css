@@ -4,30 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /*
 * Semantic elements * * * * * * * * * * * * * * * * * * * * *
 */
 
 html {
-  background-color:rgb(199, 199, 199);
   font-family: 'Inter', sans-serif;
-}
-
-body{
-  background-color:#ffffff;
-  color:rgb(28, 26, 26);
-  width: 100vw;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-main{
- width: 100vw;
 }
 
 header{
@@ -51,6 +33,7 @@ nav ul li{
 }
 
 article {
+  color:rgb(41, 38, 37);
   font-size: 1.3rem;
   font-weight: 300;
 }
@@ -58,6 +41,11 @@ article {
 article p{
   margin: 25px auto;
   padding: 20px;
+  line-height: 2.1rem;
+}
+article p::first-letter{
+  font-size: 1.5rem;
+  
 }
 
 
@@ -69,8 +57,9 @@ article p{
   background-color: rgb(0, 255, 0);
   border: 1px solid rgb(170, 255, 170);
   border-radius: 1rem;
-  padding: 1rem 2.3rem;
+  padding: 0.6rem 1.3rem;
   font-size: 1.3rem;
+  font-weight: 700;
 }
 .btnSuccess:hover {
   background-color:rgb(116, 255, 116);
@@ -81,9 +70,16 @@ article p{
 }
 
 .title{
-  margin: 160px auto 0;
-  font-size: 2em;
-  font-weight: 900;
+  margin-top: 60px;
+  font-size: 4em;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  /* text-shadow: 0.1rem 0.1rem 0.3rem rgb(74, 74, 74); */
+}
+.subtitle{
+  font-size: 1.4em;
+  font-weight: 400;
   color: white;
   text-align: center;
   /* text-shadow: 0.1rem 0.1rem 0.3rem rgb(74, 74, 74); */
@@ -103,38 +99,13 @@ article p{
   margin: 2rem auto;
 }
 
-.articleImage{
-  margin: 0px auto;
+.articleTitle{
+  padding: 25px 0;
+  font-size: 1.4em;
+  font-weight: 500;
   text-align: center;
-  max-width: 1280px;
 }
 
-.infoBubble{
-  text-align: center;
-  font-size: large;
-  margin:30px auto;
-  background-color: white;
-  color:black;
-  padding:1em;
-  width:40%;
-  border-radius: 20px;
-}
-.progressBar{
-  width: 60%;
-  max-width: 600px;
-  height: 25px;
-  margin: 40px auto 0;
-  
-  
-}
-
-.articleImage img{
-  
-  max-width: 1024px;
-  padding:0;
-  margin:0;
-  overflow: hidden;
-}
 
 /*
 * Main Menú * * * * * * * * * * * * * * * * * * * * *
@@ -157,7 +128,9 @@ nav label rect{
 .logo a{
   text-decoration: none;
   color: white;
-  padding: 10px;
+  padding-top:15px;
+  font-weight: 700;
+  font-size:1.1rem;
 }
 
 .menu{
@@ -197,9 +170,15 @@ nav label rect{
   background-color: rgb(35, 83, 206)
 }
 
+.logo {
 
-@media (max-width: 576px) {
+}
 
+@media (max-width: 768px) {
+
+  .logo {
+
+  }
   input[type='checkbox']:not(:checked)+ul {
     display: none;
   }
@@ -223,7 +202,7 @@ nav label rect{
       margin-bottom: 0;
       width: 100%;
       text-align: right;
-      padding: 0.5em;
+      padding: 0;
   }
 
   nav label {
@@ -252,17 +231,13 @@ nav label rect{
 
 footer {
   height: 160px;
-  background-color: rgb(36, 38, 52);
+  background-color: rgb(63, 53, 44);
+  border-top: 5px solid rgb(89, 77, 67);
   color: white;
   padding-top: 50px;
   text-align:center;
 }
 
-footer h4{
-  margin: 20px auto;
-  width: 80%;  
-}
-
 footer p{
-  font-size: x-small;
+  font-size: small;
 }
