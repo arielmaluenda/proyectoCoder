@@ -230,12 +230,12 @@ nav label rect{
 */
 
 footer {
-  height: 160px;
-  background-color: rgb(63, 53, 44);
+  background-color: rgb(34, 33, 32);
   border-top: 5px solid rgb(89, 77, 67);
   color: white;
   padding-top: 50px;
   text-align:center;
+  padding-bottom: 40px;
 }
 
 footer p{
