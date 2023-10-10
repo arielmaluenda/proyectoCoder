@@ -25,9 +25,11 @@ nav{
   display: flex;
   justify-content: space-between;  
 }
+
 nav ul{
   list-style-type: none;
 }
+
 nav ul li{
   display: inline-flex;
 }
@@ -43,11 +45,25 @@ article p{
   padding: 20px;
   line-height: 2.1rem;
 }
+
 article p::first-letter{
   font-size: 1.5rem;
   
 }
 
+form {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+form label{
+  font-weight: 500;
+}
+
+form .form-text{
+  font-size: smaller;
+  color:grey;
+}
 
 /*
 * Custom classes * * * * * * * * * * * * * * * * * * * * *
@@ -61,8 +77,11 @@ article p::first-letter{
   font-size: 1.3rem;
   font-weight: 700;
 }
+
 .btnSuccess:hover {
   background-color:rgb(116, 255, 116);
+
+
 }
 .btnSuccess:active{
   background-color: rgb(10, 158, 10);
@@ -77,6 +96,7 @@ article p::first-letter{
   text-align: center;
   /* text-shadow: 0.1rem 0.1rem 0.3rem rgb(74, 74, 74); */
 }
+
 .subtitle{
   font-size: 1.4em;
   font-weight: 400;
@@ -84,6 +104,7 @@ article p::first-letter{
   text-align: center;
   /* text-shadow: 0.1rem 0.1rem 0.3rem rgb(74, 74, 74); */
 }
+
 .title p{
   font-weight: 200;
   font-size: 1.5rem;
@@ -95,22 +116,22 @@ article p::first-letter{
   margin: 80px auto 0;
   text-align:center;
 }
+
 .campaignInfo p{
   margin: 2rem auto;
 }
 
 .articleTitle{
-  padding: 25px 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
   font-size: 1.4em;
   font-weight: 500;
   text-align: center;
 }
 
-
 /*
 * Main Menú * * * * * * * * * * * * * * * * * * * * *
 */
-
 
 nav input[type="checkbox"],
 nav label {
@@ -140,14 +161,17 @@ nav label rect{
   padding: 10px;  
   font-size: 1rem;
 }
+
 .menu a{
   color:white;
   text-decoration: none;
 }
+
 .menu a:hover{
   color:white;
   text-decoration: none;
 }
+
 .menu li{
   padding: 5px 15px;
   border-top: 2px solid rgb(210, 210, 210);
@@ -170,15 +194,8 @@ nav label rect{
   background-color: rgb(35, 83, 206)
 }
 
-.logo {
-
-}
-
 @media (max-width: 768px) {
 
-  .logo {
-
-  }
   input[type='checkbox']:not(:checked)+ul {
     display: none;
   }
@@ -217,6 +234,7 @@ nav label rect{
     display:block;
     padding:0;
   }
+  
   .menu li, .menu li:first-child, .menu li:last-child{
     border:0;
     border-radius: 0;
@@ -224,14 +242,13 @@ nav label rect{
 
 }
 
-
 /*
 * Footer * * * * * * * * * * * * * * * * * * * * *
 */
 
 footer {
-  background-color: rgb(34, 33, 32);
-  border-top: 5px solid rgb(89, 77, 67);
+  background: linear-gradient(to bottom, rgb(34, 33, 32), 80%, rgb(0, 0, 0) );
+  border-top: 1px solid rgb(120, 102, 87);
   color: white;
   padding-top: 50px;
   text-align:center;
