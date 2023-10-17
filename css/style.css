@@ -129,6 +129,10 @@ form .form-text{
   text-align: center;
 }
 
+.bg-lightgreen {
+  background-color: rgb(1, 245, 70);
+}
+
 /*
 * Main Menú * * * * * * * * * * * * * * * * * * * * *
 */
@@ -257,4 +261,8 @@ footer {
 
 footer p{
   font-size: small;
+}
+
+footer h4{
+  font-weight: 200;
 }
