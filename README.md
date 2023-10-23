@@ -20,3 +20,14 @@ Requisitos:
   - uso correcto del versionado
 
 * json de cuando se inicia saas se debe subir y no enviar comprimido
+
+
+ENTREGA FINAL
+Hasta el 31/10/2023
+
+- Repo de Github con las correcciones de todas las entregas.
+- Sitio final deployado en un hosting, no una github page (se sugiere infintyfree)
+- HTML. CSS. Apliación de bootstap y SASS y SEO (etiquetas meta)
+- Estructura final de la web
+- Estilo final de la web
+
