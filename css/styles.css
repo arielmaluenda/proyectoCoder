@@ -11868,9 +11868,12 @@ html {
 
 header {
   padding: 0;
-  background-image: url("../assets/images/diego-blue.jpg");
-  background-size: cover;
   color: white;
+  background-color: blue;
+  overflow: hidden;
+  background-size: cover;
+  background-image: url("../assets/images/diego-blue.jpg");
+  background-position: right top;
 }
 
 nav {
@@ -11888,7 +11891,19 @@ nav ul li {
   display: inline-flex;
 }
 
+body {
+  background-color: rgb(248, 248, 248);
+}
+
+main {
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  background-color: #fcfcfc;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+}
+
 article {
+  margin: 0 auto;
   color: rgb(41, 38, 37);
   font-size: 1.3rem;
   font-weight: 300;
@@ -11921,6 +11936,15 @@ form .form-text {
 /*
 * Custom classes * * * * * * * * * * * * * * * * * * * * *
 */
+.campaign-resume {
+  border: 1px solid rgb(170, 255, 170);
+  background-color: rgba(0, 38, 255, 0.2);
+  border-radius: 1em;
+  max-width: 400px;
+  min-width: 250px;
+  margin: 20px 0 0 20px;
+}
+
 .btnSuccess {
   background-color: rgb(0, 255, 0);
   border: 1px solid rgb(170, 255, 170);
@@ -11940,7 +11964,6 @@ form .form-text {
 }
 
 .title {
-  margin-top: 60px;
   font-size: 4em;
   font-weight: 800;
   color: white;
@@ -11960,7 +11983,6 @@ form .form-text {
   font-weight: 200;
   font-size: 1.5rem;
   max-width: 550px;
-  margin: 50px auto;
 }
 
 .campaignInfo {
@@ -12031,7 +12053,7 @@ nav label rect {
   border-top: 2px solid rgb(210, 210, 210);
   border-bottom: 2px solid rgb(210, 210, 210);
   border-right: 2px solid rgb(210, 210, 210);
-  background-color: rgb(53, 53, 205);
+  background-color: rgb(49, 49, 230);
 }
 
 .menu li:first-child {
@@ -12045,7 +12067,7 @@ nav label rect {
 
 .menu li:hover {
   color: rgb(206, 206, 206);
-  background-color: rgb(35, 83, 206);
+  background-color: rgb(2, 201, 58);
 }
 
 @media (max-width: 768px) {
