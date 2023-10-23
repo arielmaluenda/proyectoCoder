@@ -1,9 +1,4 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-/*
-* Fonts + Reset * * * * * * * * * * * * * * * * * * * * *
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*
@@ -12,8 +7,8 @@
 
 html {
   font-family: 'Inter', sans-serif;
-
 }
+
 header{
   padding: 0;  
   color: white;
@@ -29,18 +24,18 @@ nav{
   color:white;
   display: flex;
   justify-content: space-between;  
+  ul {
+    list-style-type: none;
+  }
+  ul li{
+    display: inline-flex;
+  }
 }
 
-nav ul{
-  list-style-type: none;
-}
-
-nav ul li{
-  display: inline-flex;
-}
 body{
   background-color: rgb(248, 248, 248);
 }
+
 main{
   max-width: 1280px !important;
   margin: 0 auto !important;
@@ -49,36 +44,31 @@ main{
 }
 
 article {
-  
   margin: 0 auto;
   color:rgb(41, 38, 37);
   font-size: 1.3rem;
   font-weight: 300;
-}
-
-article p{
-  margin: 25px auto;
-  padding: 20px;
-  line-height: 2.1rem;
-}
-
-article p::first-letter{
-  font-size: 1.5rem;
-  
+  p {
+    margin: 25px auto;
+    padding: 20px;
+    line-height: 2.1rem;
+  }
+  p::first-letter{
+    font-size: 1.5rem;
+    
+  }
 }
 
 form {
   font-size: 1rem;
   font-weight: 400;
-}
-
-form label{
-  font-weight: 500;
-}
-
-form .form-text{
-  font-size: smaller;
-  color:grey;
+  label {
+    font-weight: 500;
+  }
+  .form-text{
+    font-size: smaller;
+    color:grey;
+  }
 }
 
 /*
@@ -101,12 +91,10 @@ form .form-text{
   font-weight: 700;
 }
 
-
 .btnSuccess:hover {
   background-color:rgb(116, 255, 116);
-
-
 }
+
 .btnSuccess:active{
   background-color: rgb(10, 158, 10);
   color: rgb(0, 0, 0);
@@ -117,7 +105,11 @@ form .form-text{
   font-weight: 800;
   color: white;
   text-align: center;
-  /* text-shadow: 0.1rem 0.1rem 0.3rem rgb(74, 74, 74); */
+  p {
+    font-weight: 200;
+    font-size: 1.5rem;
+    max-width: 550px;
+  }
 }
 
 .subtitle{
@@ -125,22 +117,14 @@ form .form-text{
   font-weight: 400;
   color: white;
   text-align: center;
-  /* text-shadow: 0.1rem 0.1rem 0.3rem rgb(74, 74, 74); */
-}
-
-.title p{
-  font-weight: 200;
-  font-size: 1.5rem;
-  max-width: 550px;
 }
 
 .campaignInfo{
   margin: 80px auto 0;
   text-align:center;
-}
-
-.campaignInfo p{
-  margin: 2rem auto;
+  p {
+    margin: 2rem auto;
+  }
 }
 
 .articleTitle{
@@ -158,18 +142,13 @@ form .form-text{
 /*
 * Main Menú * * * * * * * * * * * * * * * * * * * * *
 */
-
-nav input[type="checkbox"],
-nav label {
+nav{
+  label rect{
+    fill: white;
+  }
+  input[type="checkbox"], label {
     display: none;
-}
-
-nav input[type='checkbox'], nav label {
-  display: none;
-}
-
-nav label rect{
-  fill: white;
+  }  
 }
 
 .logo a{
@@ -181,45 +160,35 @@ nav label rect{
 }
 
 .menu{
-
   display:flex;
   list-style-type: none;
   float:right;
   padding: 10px;  
   font-size: 1rem;
+  a {
+    color:white;
+    text-decoration: none;
+    }
+  li{
+    padding: 5px 15px;
+    border-top: 2px solid rgb(210, 210, 210);
+    border-bottom: 2px solid rgb(210, 210, 210);
+    border-right: 2px solid rgb(210, 210, 210);
+    background-color: rgb(49, 49, 230);
+  }
+  li:first-child {
+    border-radius: 10px 0 0 10px;
+    border-left: 2px solid rgb(210, 210, 210);  
+  }
+  li:last-child {
+    border-radius: 0px 10px 10px 0;  
+  }
+  li:hover{
+    color:rgb(206, 206, 206);
+    background-color: rgb(2, 201, 58)
+  }
 }
 
-.menu a{
-  color:white;
-  text-decoration: none;
-}
-
-.menu a:hover{
-  color:white;
-  text-decoration: none;
-}
-
-.menu li{
-  padding: 5px 15px;
-  border-top: 2px solid rgb(210, 210, 210);
-  border-bottom: 2px solid rgb(210, 210, 210);
-  border-right: 2px solid rgb(210, 210, 210);
-  background-color: rgb(49, 49, 230);
-}
-
-.menu li:first-child{
-  border-radius: 10px 0 0 10px;
-  border-left: 2px solid rgb(210, 210, 210);  
-}
-
-.menu li:last-child{
-  border-radius: 0px 10px 10px 0;  
-}
-
-.menu li:hover{
-  color:rgb(206, 206, 206);
-  background-color: rgb(2, 201, 58)
-}
 
 @media (max-width: 768px) {
 
@@ -232,41 +201,36 @@ nav label rect{
       flex-wrap: wrap;
       margin-left: 0;
       margin-right: 0;
-  }
-
-  nav ul {
-      display: block;
-  }
-
-  nav ul:last-child {
-      width: 100%;
-      flex-basis: 100%;
-  }
-  nav ul li {
-      margin-bottom: 0;
-      width: 100%;
-      text-align: right;
-      padding: 0;
-  }
-
-  nav label {
-    text-align: right;
-    display: block;
-    padding: 0.5em;
-    line-height: 1.6em;
-    align-self: center;
-  }
+      ul {
+        display: block;
+      }
+      ul:last-child{
+        width: 100%;
+        flex-basis: 100%;
+      }
+      ul li {
+        margin-bottom: 0;
+        width: 100%;
+        text-align: right;
+        padding: 0;
+      }
+      label {
+        text-align: right;
+        display: block;
+        padding: 0.5em;
+        line-height: 1.6em;
+        align-self: center;
+      }
+    }
 
   .menu {
     display:block;
     padding:0;
+    li, li:first-child, li:last-child {
+      border:0;
+      border-radius: 0;
+    }
   }
-  
-  .menu li, .menu li:first-child, .menu li:last-child{
-    border:0;
-    border-radius: 0;
-  }
-
 }
 
 /*
@@ -280,12 +244,10 @@ footer {
   padding-top: 50px;
   text-align:center;
   padding-bottom: 40px;
-}
-
-footer p{
-  font-size: small;
-}
-
-footer h4{
-  font-weight: 200;
+  p {
+    font-size: small;
+  }
+  h4 {
+    font-weight: 200;
+  }
 }

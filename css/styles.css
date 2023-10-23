@@ -11857,9 +11857,6 @@ textarea.form-control-lg {
   }
 }
 /*
-* Fonts + Reset * * * * * * * * * * * * * * * * * * * * *
-*/
-/*
 * Semantic elements * * * * * * * * * * * * * * * * * * * * *
 */
 html {
@@ -11882,11 +11879,9 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-
 nav ul {
   list-style-type: none;
 }
-
 nav ul li {
   display: inline-flex;
 }
@@ -11908,13 +11903,11 @@ article {
   font-size: 1.3rem;
   font-weight: 300;
 }
-
 article p {
   margin: 25px auto;
   padding: 20px;
   line-height: 2.1rem;
 }
-
 article p::first-letter {
   font-size: 1.5rem;
 }
@@ -11923,11 +11916,9 @@ form {
   font-size: 1rem;
   font-weight: 400;
 }
-
 form label {
   font-weight: 500;
 }
-
 form .form-text {
   font-size: smaller;
   color: grey;
@@ -11968,7 +11959,11 @@ form .form-text {
   font-weight: 800;
   color: white;
   text-align: center;
-  /* text-shadow: 0.1rem 0.1rem 0.3rem rgb(74, 74, 74); */
+}
+.title p {
+  font-weight: 200;
+  font-size: 1.5rem;
+  max-width: 550px;
 }
 
 .subtitle {
@@ -11976,20 +11971,12 @@ form .form-text {
   font-weight: 400;
   color: white;
   text-align: center;
-  /* text-shadow: 0.1rem 0.1rem 0.3rem rgb(74, 74, 74); */
-}
-
-.title p {
-  font-weight: 200;
-  font-size: 1.5rem;
-  max-width: 550px;
 }
 
 .campaignInfo {
   margin: 80px auto 0;
   text-align: center;
 }
-
 .campaignInfo p {
   margin: 2rem auto;
 }
@@ -12009,17 +11996,11 @@ form .form-text {
 /*
 * Main Menú * * * * * * * * * * * * * * * * * * * * *
 */
-nav input[type=checkbox],
-nav label {
-  display: none;
-}
-
-nav input[type=checkbox], nav label {
-  display: none;
-}
-
 nav label rect {
   fill: white;
+}
+nav input[type=checkbox], nav label {
+  display: none;
 }
 
 .logo a {
@@ -12037,17 +12018,10 @@ nav label rect {
   padding: 10px;
   font-size: 1rem;
 }
-
 .menu a {
   color: white;
   text-decoration: none;
 }
-
-.menu a:hover {
-  color: white;
-  text-decoration: none;
-}
-
 .menu li {
   padding: 5px 15px;
   border-top: 2px solid rgb(210, 210, 210);
@@ -12055,16 +12029,13 @@ nav label rect {
   border-right: 2px solid rgb(210, 210, 210);
   background-color: rgb(49, 49, 230);
 }
-
 .menu li:first-child {
   border-radius: 10px 0 0 10px;
   border-left: 2px solid rgb(210, 210, 210);
 }
-
 .menu li:last-child {
   border-radius: 0px 10px 10px 0;
 }
-
 .menu li:hover {
   color: rgb(206, 206, 206);
   background-color: rgb(2, 201, 58);
@@ -12120,11 +12091,9 @@ footer {
   text-align: center;
   padding-bottom: 40px;
 }
-
 footer p {
   font-size: small;
 }
-
 footer h4, footer .h4 {
   font-weight: 200;
 }
