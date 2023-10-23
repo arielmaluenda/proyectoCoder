@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*
+* Bootstrap custom variables
+*/
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -4865,15 +4868,15 @@ textarea.form-control-lg {
 
 @keyframes progress-bar-stripes {
   0% {
-    background-position-x: 1rem;
+    background-position-x: 1.4rem;
   }
 }
 .progress,
 .progress-stacked {
-  --bs-progress-height: 1rem;
+  --bs-progress-height: 1.4rem;
   --bs-progress-font-size: 0.75rem;
   --bs-progress-bg: var(--bs-secondary-bg);
-  --bs-progress-border-radius: var(--bs-border-radius);
+  --bs-progress-border-radius: 1.4rem;
   --bs-progress-box-shadow: var(--bs-box-shadow-inset);
   --bs-progress-bar-color: #fff;
   --bs-progress-bar-bg: #0d6efd;
@@ -11857,6 +11860,9 @@ textarea.form-control-lg {
   }
 }
 /*
+* Fonts
+*/
+/*
 * Semantic elements * * * * * * * * * * * * * * * * * * * * *
 */
 html {
@@ -11867,7 +11873,6 @@ header {
   padding: 0;
   color: white;
   background-color: blue;
-  overflow: hidden;
   background-size: cover;
   background-image: url("../assets/images/diego-blue.jpg");
   background-position: right top;
@@ -11927,6 +11932,18 @@ form .form-text {
 /*
 * Custom classes * * * * * * * * * * * * * * * * * * * * *
 */
+.heart {
+  animation: 0.5s beat alternate-reverse infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 .campaign-resume {
   border: 1px solid rgb(170, 255, 170);
   background-color: rgba(0, 38, 255, 0.2);
