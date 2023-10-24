@@ -12122,6 +12122,12 @@ footer .social {
   height: 24px;
   padding: 20px;
 }
+footer .social a {
+  color: white;
+}
+footer .social a:hover {
+  color: #00ff00;
+}
 footer h6, footer .h6 {
   padding-bottom: 20px;
 }
@@ -12131,6 +12137,9 @@ footer .quicklinks {
 footer .quicklinks ul li a {
   text-decoration: none;
   color: gray;
+}
+footer .quicklinks ul li a:hover {
+  color: #00ff00;
 }
 
 /*# sourceMappingURL=styles.css.map */

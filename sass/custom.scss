@@ -280,6 +280,12 @@ footer {
     width:24px;
     height:24px;
     padding: 20px;
+    a {
+      color:white;
+    }
+    a:hover{
+      color:#00ff00;
+    }
   }
   h6{
     padding-bottom: 20px;
@@ -291,6 +297,9 @@ footer {
       a{
         text-decoration: none;
         color: gray;
+      }
+      a:hover{
+        color:#00ff00;
       }  
     }
   }  
