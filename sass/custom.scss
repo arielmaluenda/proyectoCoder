@@ -45,6 +45,7 @@ nav{
 
 body{
   background-color: rgb(248, 248, 248);
+  overflow-x: hidden;
 }
 
 main{
@@ -261,16 +262,38 @@ nav{
 */
 
 footer {
-  background: linear-gradient(to bottom, rgb(34, 33, 32), 80%, rgb(0, 0, 0) );
+  background: linear-gradient(to bottom, rgb(55, 53, 51), 80%, rgb(31, 28, 28) );
   border-top: 1px solid rgb(120, 102, 87);
   color: white;
   padding-top: 50px;
-  text-align:center;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 40px;
   p {
     font-size: small;
+    color: gray;
   }
   h4 {
     font-weight: 200;
   }
+  .social {
+    width:24px;
+    height:24px;
+    padding: 20px;
+  }
+  h6{
+    padding-bottom: 20px;
+  }
+  .quicklinks{
+    text-align: center;
+  ul{
+    li{
+      a{
+        text-decoration: none;
+        color: gray;
+      }  
+    }
+  }  
+  }
+  
 }
